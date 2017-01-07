@@ -1,0 +1,134 @@
+﻿body {
+    padding: 65px;
+}
+
+.view {
+    left: 60px;
+    position: relative;
+    opacity: 0.0;
+}
+
+.card {
+    background-color:#efefef;
+    border: 1px solid black;
+    height:75px;
+    width: 225px;
+    margin-bottom: 20px;
+}
+
+.cardHeader {
+    background-color: #006dcc;
+    font-size:12pt;
+    color:white;
+    padding:5px;
+}
+
+.sideHeader {
+    background-color: #006daa;
+    font-size:12pt;
+    color:white;
+    padding:5px;
+
+}
+
+.cardClose {
+    color: black;
+    font-weight:bold;
+    margin-right:5px;
+    margin-top:10px;
+}
+
+.cardContainer {
+    width:90%;
+}
+
+.cardBody {
+    background-color: #efefef;
+    margin-top: 10px;
+    padding-left: 5px;
+}
+
+.cardUpdate {
+    text-align:center;
+    font-size:9pt;
+    height:20px;
+    width:60px;
+}
+
+.doneButton {
+    vertical-align: middle;
+    float:right;
+    text-align:center;
+    font-size:7pt;
+    height:10px;
+    width:60px;
+}
+
+.checkButton {
+    vertical-align: middle;
+    float:right;
+    text-align:center;
+    font-size:9pt;
+    height:20px;
+    width:60px;
+}
+
+.add {
+    vertical-align: middle;
+    float:left;
+}
+
+.row input {
+    vertical-align: middle;
+    margin-bottom: 2px;
+}
+
+.lastRow {
+    background-color: #ccc;
+}
+
+.indent {
+    margin-left:20px;
+}
+
+.ordersTable {
+    width:800px;
+    margin-left:20px;
+}
+
+.orders th, .customerOrders th {
+    width:25%;
+    cursor: pointer;
+}
+
+.ordersTable tr:first-child th {
+    background-color: #006dcc;
+    color: #fff;
+    font-weight: bold;
+}
+
+
+#submitCustomer {
+}
+
+footer {
+    margin-top:10px;
+    font-weight: bold;
+    text-align: center;
+}
+
+
+/* Bootstrap overrides */
+.navbar-inner {
+    -webkit-border-radius: 0px;
+    border-radius: 0px;
+}
+
+.navbar .nav {
+    margin-left:50px;
+    margin-top:15px;
+}
+
+.close {
+    opacity: 1.0;
+}

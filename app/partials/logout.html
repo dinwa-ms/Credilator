@@ -1,0 +1,35 @@
+﻿
+
+<div class="customers view">
+    <div class="container">
+        <header class="span12">
+            <h3>User View (for boyfriend/husband)</h3>
+        </header>
+        <div class="span12">
+            <a href="#/login">Log In</a>
+        </div>
+        <div class="span12"><br /></div>        
+        <div class="span12">
+            <div class="row cardContainer">
+                <div class="span10"><div class="sideHeader">What I have done</div></div>
+                <div data-ng-repeat="customer in globalVar | orderBy:'Side'" >
+                    <div class="span5 " data-ng-if="customer.Side=='What I have done'" >
+                        <div class="cardBody">{{customer.Name + ' '}}
+                            <input class="doneButton" type="checkbox" ng-model="done" data-ng-click="doneSomething(done, customer.id);" />
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="span10"><br><div class="sideHeader">What I want to do</div></div>
+                <div data-ng-repeat="customer in globalVar | orderBy:'Side'" >
+                    <div class="span5 " data-ng-if="customer.Side=='What I want to do'" >
+                        <div class="cardBody">{{customer.Name + ' '}}
+                            <button class="checkButton" data-ng-click="todoSomething(customer.id)">CAN I ?</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="span12"><br /></div>
+    </div>
+</div>
